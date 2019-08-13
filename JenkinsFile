@@ -1,0 +1,45 @@
+pipeline {
+    agent any
+    stages {
+        stage("Checkout") {
+            steps{
+                git url: 'https://github.com/m-browntown/VeraInsecure.git',
+                	credentialsId: 'DockerCentosMac'
+            }
+        }
+
+        //SourceClear does a scan of open source libraries used by the app and provides feedback for vulnerabilities 
+        stage("Veracode SrcClr Scan") {
+            steps {
+                script {
+                    if(isUnix()) {
+                        withCredentials([string(credentialsId: 'SRCCLR_API_TOKEN', variable: 'SRCCLR_API_TOKEN')]) {
+                            sh label: '', script: 'curl https://download.sourceclear.com/ci.sh | sh'
+                        }
+                    } else {
+                        withCredentials([string(credentialsId: 'SRCCLR_API_TOKEN', variable: 'SRCCLR_API_TOKEN')]) {
+                            powershell label: '', script: 'Set-ExecutionPolicy AllSigned -Scope Process -Force;'
+                            powershell label: '', script: 'iex ((New-Object System.Net.WebClient).DownloadString("https://download.srcclr.com/ci.ps1")); srcclr scan'
+                        }
+                    }
+                } 
+            }
+        }
+
+        stage("Build") {
+            steps {
+                script {
+                    if(isUnix()) {
+                        withMaven(maven: 'Maven') {
+                            sh label: '', script: 'mvn clean package'
+                        }
+                    } else {
+                        withMaven(maven: 'Maven') {
+                            bat label: '', script: 'mvn clean package'
+                        }
+                    }
+                }
+            }   
+        }
+    }
+}

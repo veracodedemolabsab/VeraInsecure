@@ -1,0 +1,56 @@
+package xyz.veracode.verainsecure;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+//CWE 117 Sanitizer
+import java.net.URLEncoder;
+import java.util.Random;
+
+//CWE 117 
+import org.apache.log4j.*;
+
+
+public class CRLFInjection extends HttpServlet {
+
+	private static final long serialVersionUID = 1L;
+
+	static Logger logger = Logger.getLogger(CRLFInjection.class.getName());
+
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public CRLFInjection() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @return 
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+		
+		//CWE 117: Improper Output Neutralization of Logs + CWE 80 for Browser-Based Log Parsers
+		String username = req.getParameter("crlfusername");
+		logger.info(username);
+
+		
+		//Stop CWE 117 with Veracode Approved Library
+		String sanitizedUsername = URLEncoder.encode(username, "UTF-8");
+		logger.info(sanitizedUsername);
+		
+		//Stop CWE 117 with Custom Method with best practice
+		String customSanitizedUsername = Utilities.crlfStringFix(username);
+		logger.info(customSanitizedUsername);
+		
+		//Stop CWE 117 with Custom Method no flaw or best practice
+		Utilities.cleanInfoLogger(logger, username);
+		
+	}
+
+}
