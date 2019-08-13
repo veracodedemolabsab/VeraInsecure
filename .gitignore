@@ -1,9 +1,15 @@
 target/
 .mvn/timing.properties
 
+#Eclipse
 .settings/
 .project
 .classpath
+
+#Intellij
+.idea/
+*.iml
+*.iws
 
 .DS_Store
 
