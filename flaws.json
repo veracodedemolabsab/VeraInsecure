@@ -1,17 +1,17 @@
 
 {
-	"IgnoredFlaws": [
-		{
-			"filename": "xyz/veracode/verainsecure/Receipt.java",
-			"comments": "comments",
-			"cweid": 73,
-			"flawhash": 2856778418,
-			"flawHashCount": 2,
-			"flawHashOrdinal": 2,
-			"causehash": 3405435173,
-			"causeHashOrdinal": 1,
-			"prototypehash": 1038498633,
-			"procedurehash": 3592544898
-		}
-	]
+    "IgnoredFlaws": [
+        {
+            "filename": "xyz/veracode/verainsecure/SQLInjection.java",
+            "comments": "comments",
+            "cweid": 80,
+            "flawhash": 813860679,
+            "flawHashCount": 1,
+            "flawHashOrdinal": 1,
+            "causehash": 2058594910,
+            "causeHashOrdinal": 1,
+            "prototypehash": 3825569730,
+            "procedurehash": 3484567106
+        }
+    ]
 }

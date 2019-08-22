@@ -34,6 +34,12 @@
 		<description></description>
 		<servlet-class>xyz.veracode.verainsecure.SQLInjection</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>OpenRedirect</servlet-name>
+		<display-name>OpenRedirect</display-name>
+		<description></description>
+		<servlet-class>xyz.veracode.verainsecure.OpenRedirect</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>CRLFInjection</servlet-name>
 		<url-pattern>/crlfinjection</url-pattern>
@@ -53,6 +59,10 @@
 	<servlet-mapping>
 		<servlet-name>SQLInjection</servlet-name>
 		<url-pattern>/sqlinjection</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>OpenRedirect</servlet-name>
+		<url-pattern>/openredirect</url-pattern>
 	</servlet-mapping>
 </web-app>
 

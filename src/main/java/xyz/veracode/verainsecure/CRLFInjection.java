@@ -9,7 +9,6 @@ import javax.servlet.http.HttpServletResponse;
 
 //CWE 117 Sanitizer
 import java.net.URLEncoder;
-import java.util.Random;
 
 //CWE 117 
 import org.apache.log4j.*;

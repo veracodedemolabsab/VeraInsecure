@@ -24,6 +24,13 @@ public class SQLInjection extends HttpServlet {
         super();
         // TODO Auto-generated constructor stub
     }
+    
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+		//Stuff to get
+	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
@@ -31,7 +38,6 @@ public class SQLInjection extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		
 		String username = req.getParameter("sqlusername");
-		
 		
 		ClassLoader loader = Thread.currentThread().getContextClassLoader();
 		Properties props = new Properties();
@@ -68,7 +74,6 @@ public class SQLInjection extends HttpServlet {
 //		 } catch (Exception e) {
 //            e.printStackTrace();
 //       }		
-		
 
 		
 		//CWE 89: SQL Injection for String

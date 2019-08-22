@@ -19,7 +19,7 @@ public class Utilities {
 	}
 	
 	//CWE 73 Custom Cleanser
-	@FilePathCleanser(userComment="AlphaNumeric Regex to Fix File Path CWE73", value="test_value")
+	@FilePathCleanser(userComment="AlphaNumeric Regex to Fix File Path CWE73")
 	public static String cleanFilePath(String stringToValidate) {
 		if(stringToValidate.matches("[A-Za-z0-9]+")) {
 			return stringToValidate;
