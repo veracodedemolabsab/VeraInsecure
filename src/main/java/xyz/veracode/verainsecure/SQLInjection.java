@@ -13,7 +13,6 @@ import java.sql.*;
 import java.util.Properties;
 
 
-
 public class SQLInjection extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -52,7 +51,7 @@ public class SQLInjection extends HttpServlet {
         try {
         	//CWE 245: J2EE Bad Practices: Direct Management of Connections
         	Class.forName("org.sqlite.JDBC");
-            String sqliteUrl = "jdbc:sqlite:/Users/mbrown/Desktop/sqlite3/" + props.getProperty("sqlitedb");
+            String sqliteUrl = "jdbc:sqlite:" + props.getProperty("sqlitedbpath");
             sqlite3Conn = DriverManager.getConnection(sqliteUrl);
 		} catch (Exception e) {
             e.printStackTrace();
@@ -76,7 +75,7 @@ public class SQLInjection extends HttpServlet {
 //       }		
 
 		
-		//CWE 89: SQL Injection for String
+		//CWE 89: SQL Injection for String for SQLite3
         //If username in database is tom try entering tom" OR "1"="1 into the user field
 		String badSqlQuery = "SELECT username, balance, accounttype FROM users WHERE username=\"" + username + "\"";
 		try {
@@ -91,7 +90,7 @@ public class SQLInjection extends HttpServlet {
 		}
         
 		
-		//Stop CWE 89 With Prepared Statements
+		//Stop CWE 89 With Prepared Statements for SQLite3
         //If username in database is tom try entering tom" OR "1"="1 into the user field
 //		String goodSqlQuery = "SELECT username, balance, accounttype FROM users WHERE username=?";
 //		try {

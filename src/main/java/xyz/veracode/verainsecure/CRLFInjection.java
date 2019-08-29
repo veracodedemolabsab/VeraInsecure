@@ -38,7 +38,6 @@ public class CRLFInjection extends HttpServlet {
 		String username = req.getParameter("crlfusername");
 		logger.info(username);
 
-		
 		//Stop CWE 117 with Veracode Approved Library
 		String sanitizedUsername = URLEncoder.encode(username, "UTF-8");
 		logger.info(sanitizedUsername);
