@@ -2,16 +2,16 @@
 {
     "IgnoredFlaws": [
         {
-            "filename": "xyz/veracode/verainsecure/ErrorMessageExposure.java",
+            "filename": "xyz/veracode/verainsecure/XSS.java",
             "comments": "comments",
-            "cweid": 209,
-            "flawhash": 2559643004,
+            "cweid": 80,
+            "flawhash": 239218340,
             "flawHashCount": 2,
-            "flawHashOrdinal": 2,
-            "causehash": 3228581583,
+            "flawHashOrdinal": 1,
+            "causehash": 1176028798,
             "causeHashOrdinal": 1,
-            "prototypehash": 3707845630,
-            "procedurehash": 3596337948
+            "prototypehash": 1326927592,
+            "procedurehash": 3900326821
         }
     ]
 }
