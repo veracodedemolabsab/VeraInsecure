@@ -2,16 +2,16 @@
 {
     "IgnoredFlaws": [
         {
-            "filename": "xyz/veracode/verainsecure/XSS.java",
+            "filename": "xyz/veracode/verainsecure/SQLInjection.java",
             "comments": "comments",
-            "cweid": 80,
-            "flawhash": 239218340,
-            "flawHashCount": 2,
-            "flawHashOrdinal": 1,
-            "causehash": 1176028798,
+            "cweid": 245,
+            "flawhash": 1480817290,
+            "flawHashCount": 3,
+            "flawHashOrdinal": 2,
+            "causehash": 2866949028,
             "causeHashOrdinal": 1,
-            "prototypehash": 1326927592,
-            "procedurehash": 3900326821
+            "prototypehash": 3825569730,
+            "procedurehash": 829858190
         }
     ]
 }

@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  maven:
+    build: .
+    command: mvn clean package
+    volumes: 
+       - ./:/usr/src/mymaven
+  web:
+    build: 
+      context: .
+      dockerfile: WebDockerfile
+    ports: 
+      - 8181:8080

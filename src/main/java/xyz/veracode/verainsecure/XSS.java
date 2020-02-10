@@ -11,6 +11,10 @@ import javax.servlet.http.HttpServletResponse;
 //CWE 80 Sanitizer
 import org.owasp.encoder.*;
 
+//SCA Flawed Lib
+//https://github.com/jeremyh/jBCrypt
+import org.mindrot.jbcrypt.BCrypt;
+
 
 public class XSS extends HttpServlet {
 
@@ -48,6 +52,10 @@ public class XSS extends HttpServlet {
 		cleanHTMLResponse += "<h2>Your non xss vulnerable username is: " + sanitizedUsername + "<br/>";
 		cleanHTMLResponse += "</html>";
 		writer.println(cleanHTMLResponse);
+		
+		//JBCrypt Flaw for SCA
+		String password = req.getParameter("xsspassword");
+		String hashedPassword = BCrypt.hashpw(password, "123");
 
 	}
 
