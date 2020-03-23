@@ -1,17 +1,16 @@
 package xyz.veracode.verainsecure;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.PrintWriter;
+import org.apache.logging.log4j.*;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
 
-import org.apache.log4j.*;
 
-import xyz.veracode.verainsecure.Utilities;
 
 //Shows File Path Injection
 public class Receipt extends HttpServlet {
@@ -19,7 +18,7 @@ public class Receipt extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
 
-	static Logger logger = Logger.getLogger(CRLFInjection.class.getName());
+	static Logger logger = LogManager.getLogger(Receipt.class.getName());
 
     public Receipt() {
         super();

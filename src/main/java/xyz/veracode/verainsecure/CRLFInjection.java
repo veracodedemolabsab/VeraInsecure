@@ -1,11 +1,10 @@
 package xyz.veracode.verainsecure;
 
-import java.io.IOException;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 //CWE 117 Sanitizer
 import java.net.URLEncoder;
@@ -18,7 +17,7 @@ public class CRLFInjection extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
 
-	static Logger logger = Logger.getLogger(CRLFInjection.class.getName());
+	static Logger logger = LogManager.getLogger(CRLFInjection.class.getName());
 
     /**
      * @see HttpServlet#HttpServlet()
@@ -41,13 +40,6 @@ public class CRLFInjection extends HttpServlet {
 		//Stop CWE 117 with Veracode Approved Library
 		String sanitizedUsername = URLEncoder.encode(username, "UTF-8");
 		logger.info(sanitizedUsername);
-		
-		//Stop CWE 117 with Custom Method with best practice
-		String customSanitizedUsername = Utilities.crlfStringFix(username);
-		logger.info(customSanitizedUsername);
-		
-		//Stop CWE 117 with Custom Method no flaw or best practice
-		Utilities.cleanInfoLogger(logger, username);
 		
 	}
 

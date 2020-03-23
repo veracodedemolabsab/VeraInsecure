@@ -1,19 +1,18 @@
 package xyz.veracode.verainsecure;
 
-import java.io.IOException;
-import java.io.PrintWriter;
+import org.mindrot.jbcrypt.BCrypt;
+import org.owasp.encoder.Encode;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 //CWE 80 Sanitizer
-import org.owasp.encoder.*;
-
 //SCA Flawed Lib
 //https://github.com/jeremyh/jBCrypt
-import org.mindrot.jbcrypt.BCrypt;
 
 
 public class XSS extends HttpServlet {

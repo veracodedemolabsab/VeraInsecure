@@ -1,10 +1,10 @@
 package xyz.veracode.verainsecure;
 
+import com.veracode.annotation.FilePathCleanser;
+import org.apache.logging.log4j.*;
+
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
-import org.apache.log4j.*;
-
-import com.veracode.annotation.FilePathCleanser;
 
 public class Utilities {
 
