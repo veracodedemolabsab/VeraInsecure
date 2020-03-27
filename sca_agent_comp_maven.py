@@ -1,3 +1,8 @@
+#Allows running a Veracode Code agent SCA scan to find differences between master and chosen branch in a Maven project
+#Update guidance will be provided for each new libary a developer adds that creates an issue
+#example useage:
+#command line: srcclr scan --allow-dirty --update-advisor --json > scaresults && python3 sca_agent_comp_maven.py <branch>
+
 import os
 import sys
 import re
@@ -29,7 +34,7 @@ if len(pomChanges) == 0:
 
 newScaFlaws = []
 
-with open('testUpdate.json') as f:
+with open('scaresults.json') as f:
   data = json.load(f)
 updateAdvices = data["records"][0]["updateAdvisor"]["updateAdvices"]
 for evidence in updateAdvices:
