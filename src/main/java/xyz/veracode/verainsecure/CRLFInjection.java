@@ -6,11 +6,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-//CWE 117 Sanitizer
 import java.net.URLEncoder;
 
 //CWE 117 
 import org.apache.log4j.*;
+
 
 
 public class CRLFInjection extends HttpServlet {
@@ -33,7 +33,7 @@ public class CRLFInjection extends HttpServlet {
 	 */
 	public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		
-		//CWE 117: Improper Output Neutralization of Logs + CWE 80 for Browser-Based Log Parsers
+		//CWE 117: Improper Output Neutralization of Logs
 		String username = req.getParameter("crlfusername");
 		logger.info(username);
 

@@ -25,7 +25,7 @@ pipeline {
                 } 
             }
         }
-
+        
         stage("Build") {
             steps {
                 script {
@@ -40,6 +40,25 @@ pipeline {
                     }
                 }
             }   
+        }
+        
+        stage("Veracode Pipeline Scan") {
+            steps {
+                withCredentials([usernamePassword(credentialsId: 'veracode-credentials', passwordVariable: 'veracode_key', usernameVariable: 'veracode_id')]) {
+                    sh label: '', script: '''curl -O https://downloads.veracode.com/securityscan/pipeline-scan-LATEST.zip'''
+                    sh label: '', script: '''unzip pipeline-scan-LATEST.zip -d pipeline-scan-LATEST'''
+                    //Fail on High
+                    sh label: '', script: 'java -jar "pipeline-scan-LATEST/pipeline-scan.jar" -vid $veracode_id -vkey $veracode_key --fail_on_severity "High" -f "target/verainsecure.war"'
+                }
+            }
+        }
+        
+        stage("Veracode Static Analysis") {
+            steps {
+                withCredentials([usernamePassword(credentialsId: 'veracode-credentials', passwordVariable: 'veracode_key', usernameVariable: 'veracode_id')]) {
+                    veracode applicationName: 'VeraInsecure', criticality: 'Medium', debug: true, scanName: 'Jenkins - Build $buildnumber', uploadIncludesPattern: '**/**.war', useIDkey: true, vid: env.veracode_id, vkey: env.veracode_key
+                }
+            }
         }
     }
 }
