@@ -1,0 +1,752 @@
+{
+  "metadata" : {
+    "requestDate" : "2020-03-30T20:55:53.008+0000"
+  },
+  "records" : [ {
+    "metadata" : {
+      "recordType" : "SCAN",
+      "report" : "https://sca.analysiscenter.veracode.com/teams/K77HrnO/scans/10859233"
+    },
+    "graphs" : [ {
+      "coords" : {
+        "coordinateType" : "MAVEN",
+        "coordinate1" : "xyz.veracode.verainsecure",
+        "coordinate2" : "verainsecure",
+        "version" : "0.0.1-SNAPSHOT",
+        "scope" : null,
+        "platform" : null,
+        "commitHash" : null
+      },
+      "directs" : [ {
+        "coords" : {
+          "coordinateType" : "MAVEN",
+          "coordinate1" : "com.veracode.annotation",
+          "coordinate2" : "VeracodeAnnotations",
+          "version" : "1.2.1",
+          "scope" : "compile",
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "pom.xml",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "MAVEN",
+          "coordinate1" : "org.apache.logging.log4j",
+          "coordinate2" : "log4j-api",
+          "version" : "2.13.1",
+          "scope" : "compile",
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "pom.xml",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "MAVEN",
+          "coordinate1" : "org.postgresql",
+          "coordinate2" : "postgresql",
+          "version" : "42.2.6",
+          "scope" : "compile",
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "pom.xml",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "MAVEN",
+          "coordinate1" : "org.apache.logging.log4j",
+          "coordinate2" : "log4j-core",
+          "version" : "2.13.1",
+          "scope" : "compile",
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "pom.xml",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "MAVEN",
+          "coordinate1" : "javax.servlet",
+          "coordinate2" : "javax.servlet-api",
+          "version" : "3.1.0",
+          "scope" : "compile",
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "pom.xml",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "MAVEN",
+          "coordinate1" : "log4j",
+          "coordinate2" : "log4j",
+          "version" : "1.2.17",
+          "scope" : "compile",
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "pom.xml",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "MAVEN",
+          "coordinate1" : "javax.servlet",
+          "coordinate2" : "jsp-api",
+          "version" : "2.0",
+          "scope" : "provided",
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ {
+          "coords" : {
+            "coordinateType" : "MAVEN",
+            "coordinate1" : "javax.servlet",
+            "coordinate2" : "servlet-api",
+            "version" : "2.4",
+            "scope" : "provided",
+            "platform" : null,
+            "commitHash" : null
+          },
+          "directs" : [ ],
+          "filename" : "pom.xml",
+          "lineNumber" : null,
+          "moduleName" : null,
+          "sha1" : null,
+          "sha2" : null,
+          "bytecodeHash" : null
+        } ],
+        "filename" : "pom.xml",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "MAVEN",
+          "coordinate1" : "org.mindrot",
+          "coordinate2" : "jbcrypt",
+          "version" : "0.3m",
+          "scope" : "compile",
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "pom.xml",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "MAVEN",
+          "coordinate1" : "org.xerial",
+          "coordinate2" : "sqlite-jdbc",
+          "version" : "3.28.0",
+          "scope" : "compile",
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "pom.xml",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "MAVEN",
+          "coordinate1" : "org.apache.commons",
+          "coordinate2" : "commons-lang3",
+          "version" : "3.0",
+          "scope" : "compile",
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "pom.xml",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      }, {
+        "coords" : {
+          "coordinateType" : "MAVEN",
+          "coordinate1" : "org.owasp.encoder",
+          "coordinate2" : "encoder",
+          "version" : "1.2.1",
+          "scope" : "compile",
+          "platform" : null,
+          "commitHash" : null
+        },
+        "directs" : [ ],
+        "filename" : "pom.xml",
+        "lineNumber" : null,
+        "moduleName" : null,
+        "sha1" : null,
+        "sha2" : null,
+        "bytecodeHash" : null
+      } ],
+      "filename" : "pom.xml",
+      "lineNumber" : null,
+      "moduleName" : null,
+      "sha1" : null,
+      "sha2" : null,
+      "bytecodeHash" : null
+    } ],
+    "libraries" : [ {
+      "name" : "Apache Commons Lang",
+      "description" : "Apache Commons Lang, a package of Java utility classes for the classes that are in java.lang's hierarchy, or are considered to be so standard as to justify existence in java.lang.",
+      "author" : "CollabNet, Inc.",
+      "authorUrl" : "https://commons.apache.org/proper/commons-lang/",
+      "language" : "JAVA",
+      "coordinateType" : "MAVEN",
+      "coordinate1" : "org.apache.commons",
+      "coordinate2" : "commons-lang3",
+      "bugTrackerUrl" : "https://issues.apache.org/jira/browse/LANG",
+      "codeRepoType" : null,
+      "codeRepoUrl" : "https://gitbox.apache.org/repos/asf?p=commons-lang.git",
+      "latestRelease" : "3.0",
+      "latestReleaseDate" : "2011-07-19T03:36:05.000+0000",
+      "versions" : [ {
+        "version" : "3.0",
+        "releaseDate" : "2011-07-19T03:36:05.000+0000",
+        "sha1" : "8873bd0bb5cb9ee37f1b04578eb7e26fcdd44cb0",
+        "sha2" : "980ef14cb0468c7080f88a72fab73f9c89c029217f3c8c535b0672570e32cc08",
+        "bytecodeHash" : "f16ff1181dced81474f3d1a57213adbf153d8addc725e99ec943c6511e285e33",
+        "platform" : "",
+        "licenses" : [ {
+          "name" : "APACHE20",
+          "license" : "Apache License 2.0 (Apache-2.0)",
+          "fromParentPom" : true
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/104?version=3.0"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/104"
+      }
+    }, {
+      "name" : "Apache Log4j API",
+      "description" : "The Apache Log4j API",
+      "author" : "Nextiva",
+      "authorUrl" : null,
+      "language" : "JAVA",
+      "coordinateType" : "MAVEN",
+      "coordinate1" : "org.apache.logging.log4j",
+      "coordinate2" : "log4j-api",
+      "bugTrackerUrl" : "https://issues.apache.org/jira/browse/LOG4J2",
+      "codeRepoType" : null,
+      "codeRepoUrl" : "https://git-wip-us.apache.org/repos/asf?p=logging-log4j2.git;a=summary",
+      "latestRelease" : "2.13.1",
+      "latestReleaseDate" : "2020-02-26T02:53:14.000+0000",
+      "versions" : [ {
+        "version" : "2.13.1",
+        "releaseDate" : "2020-02-26T02:53:14.000+0000",
+        "sha1" : "cc670f92dc77bbf4540904c3fa211b997cba00d8",
+        "sha2" : "307fffc2623d010e3fe67d9f6b101c14bae33ec310e5f56960d491885fd59630",
+        "bytecodeHash" : "9f13def6e30d774f869b49ccfc26936e918a48e6430347d75752afa58c3a38a0",
+        "platform" : "",
+        "licenses" : [ {
+          "name" : "APACHE20",
+          "license" : "Apache License 2.0 (Apache-2.0)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/4121?version=2.13.1"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/4121"
+      }
+    }, {
+      "name" : "Apache Log4j Core",
+      "description" : "The Apache Log4j Implementation",
+      "author" : "Nextiva",
+      "authorUrl" : null,
+      "language" : "JAVA",
+      "coordinateType" : "MAVEN",
+      "coordinate1" : "org.apache.logging.log4j",
+      "coordinate2" : "log4j-core",
+      "bugTrackerUrl" : "https://issues.apache.org/jira/browse/LOG4J2",
+      "codeRepoType" : null,
+      "codeRepoUrl" : "https://git-wip-us.apache.org/repos/asf?p=logging-log4j2.git;a=summary",
+      "latestRelease" : "2.13.1",
+      "latestReleaseDate" : "2020-02-26T02:53:55.000+0000",
+      "versions" : [ {
+        "version" : "2.13.1",
+        "releaseDate" : "2020-02-26T02:53:55.000+0000",
+        "sha1" : "533f6ae0bb0ce091493f2eeab0c1df4327e46ef1",
+        "sha2" : "88ebd503b35a0debe18c2707db9de33a8c6d96491270b7f02dd086b8072426b2",
+        "bytecodeHash" : "143f830571945c2a9d0e26707791910c3491557ce80b99d360207487cf160e3f",
+        "platform" : "",
+        "licenses" : [ ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/4128?version=2.13.1"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/4128"
+      }
+    }, {
+      "name" : "Apache Log4j",
+      "description" : "Apache Log4j 1.2",
+      "author" : null,
+      "authorUrl" : "http://logging.apache.org/log4j/1.2/",
+      "language" : "JAVA",
+      "coordinateType" : "MAVEN",
+      "coordinate1" : "log4j",
+      "coordinate2" : "log4j",
+      "bugTrackerUrl" : "https://issues.apache.org/bugzilla/describecomponents.cgi?product=Log4j",
+      "codeRepoType" : null,
+      "codeRepoUrl" : "http://svn.apache.org/viewvc/logging/log4j/tags/v1_2_17_rc3",
+      "latestRelease" : "1.2.17",
+      "latestReleaseDate" : "2012-05-26T09:43:39.000+0000",
+      "versions" : [ {
+        "version" : "1.2.17",
+        "releaseDate" : "2012-05-26T09:43:39.000+0000",
+        "sha1" : "5af35056b4d257e4b64b9e8069c0746e8b08629f",
+        "sha2" : "1d31696445697720527091754369082a6651bd49781b6005deb94e56753406f9",
+        "bytecodeHash" : "f9d766d707b955450bba5f270dabd241f01def042684f942aadf965e28e80248",
+        "platform" : "",
+        "licenses" : [ {
+          "name" : "APACHE20",
+          "license" : "Apache License 2.0 (Apache-2.0)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/163?version=1.2.17"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/163"
+      }
+    }, {
+      "name" : "Java Encoder",
+      "description" : "The OWASP Encoders package is a collection of high-performance low-overhead contextual encoders, that when utilized correctly, is an effective tool in preventing Web Application security vulnerabiliti",
+      "author" : null,
+      "authorUrl" : null,
+      "language" : "JAVA",
+      "coordinateType" : "MAVEN",
+      "coordinate1" : "org.owasp.encoder",
+      "coordinate2" : "encoder",
+      "bugTrackerUrl" : "https://github.com/owasp/owasp-java-encoder/issues",
+      "codeRepoType" : null,
+      "codeRepoUrl" : "https://github.com/owasp/owasp-java-encoder",
+      "latestRelease" : "1.2.1",
+      "latestReleaseDate" : "2017-02-19T12:04:52.000+0000",
+      "versions" : [ {
+        "version" : "1.2.1",
+        "releaseDate" : "2017-02-19T12:04:52.000+0000",
+        "sha1" : "a0583521083f7c1532ffd01716c46568d97109f0",
+        "sha2" : "dd50d40a58b38c81be51239366f0980efc849ab059b5a999ae6155c0a7d59177",
+        "bytecodeHash" : "47f5886e938709931e9abd4670a86e53ef2a251277b18ad29a1cc59612371d17",
+        "platform" : "",
+        "licenses" : [ {
+          "name" : "BSD3",
+          "license" : "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
+          "fromParentPom" : true
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/245285?version=1.2.1"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/245285"
+      }
+    }, {
+      "name" : "Java Servlet API",
+      "description" : "Java.net - The Source for Java Technology Collaboration",
+      "author" : "Oracle",
+      "authorUrl" : "https://javaee.github.io/servlet-spec/",
+      "language" : "JAVA",
+      "coordinateType" : "MAVEN",
+      "coordinate1" : "javax.servlet",
+      "coordinate2" : "javax.servlet-api",
+      "bugTrackerUrl" : "https://github.com/javaee/servlet-spec/issues",
+      "codeRepoType" : null,
+      "codeRepoUrl" : "https://github.com/javaee/servlet-spec",
+      "latestRelease" : "3.1.0",
+      "latestReleaseDate" : "2013-04-25T23:52:39.000+0000",
+      "versions" : [ {
+        "version" : "3.1.0",
+        "releaseDate" : "2013-04-25T23:52:39.000+0000",
+        "sha1" : "3cd63d075497751784b2fa84be59432f4905bf7c",
+        "sha2" : "af456b2dd41c4e82cf54f3e743bc678973d9fe35bd4d3071fa05c7e5333b8482",
+        "bytecodeHash" : "2e130c843bce5d659e05da9e4ebedb9538066896acfb572a3db035cebfe58df8",
+        "platform" : "",
+        "licenses" : [ {
+          "name" : "CDDL10",
+          "license" : "Common Development and Distribution License 1.0 (CDDL-1.0)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/1000?version=3.1.0"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/1000"
+      }
+    }, {
+      "name" : "JavaServlet(TM) Specification",
+      "description" : "javax.servlet:servlet-api",
+      "author" : "Sun Microsystems, Inc.",
+      "authorUrl" : "http://jcp.org/en/jsr/detail?id=315",
+      "language" : "JAVA",
+      "coordinateType" : "MAVEN",
+      "coordinate1" : "javax.servlet",
+      "coordinate2" : "servlet-api",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "2.4",
+      "latestReleaseDate" : "2005-11-08T21:58:35.000+0000",
+      "versions" : [ {
+        "version" : "2.4",
+        "releaseDate" : "2005-11-08T21:58:35.000+0000",
+        "sha1" : "3fc542fe8bb8164e8d3e840fe7403bc0518053c0",
+        "sha2" : "243f8b5577f59bffdd30fd15cc25fc13004a6b08773a61cc32e48726c3633b7c",
+        "bytecodeHash" : "019cf7ddb2231c61e1e79a598b34b743cf873fb78edb1bafec27f646f46be2b7",
+        "platform" : "",
+        "licenses" : [ ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/244?version=2.4"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/244"
+      }
+    }, {
+      "name" : "jBCrypt",
+      "description" : "OpenBSD-style Blowfish password hashing for Java",
+      "author" : "Mindrot.org",
+      "authorUrl" : "https://github.com/djmdjm/jBCrypt",
+      "language" : "JAVA",
+      "coordinateType" : "MAVEN",
+      "coordinate1" : "org.mindrot",
+      "coordinate2" : "jbcrypt",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : "https://github.com/djmdjm/jBCrypt.git",
+      "latestRelease" : "0.3m",
+      "latestReleaseDate" : "2010-05-17T02:46:39.000+0000",
+      "versions" : [ {
+        "version" : "0.3m",
+        "releaseDate" : "2010-05-17T02:46:39.000+0000",
+        "sha1" : "fe2d9c5f23767d681a7e38fc8986b812400ec583",
+        "sha2" : "c0717079f4fe18f72f36ad1ab15a2afa63c6544fee4b9ac2128851330b5e1031",
+        "bytecodeHash" : "4efc810e5ae6f94fa5584f6fb077d8a2c4d42eb900dc846b3943c00972e6376e",
+        "platform" : "",
+        "licenses" : [ {
+          "name" : "BSD3",
+          "license" : "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
+          "fromParentPom" : false
+        }, {
+          "name" : "ISC",
+          "license" : "ISC License (ISC)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/4015?version=0.3m"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/4015"
+      }
+    }, {
+      "name" : "jsp-api",
+      "description" : null,
+      "author" : null,
+      "authorUrl" : null,
+      "language" : "JAVA",
+      "coordinateType" : "MAVEN",
+      "coordinate1" : "javax.servlet",
+      "coordinate2" : "jsp-api",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : null,
+      "latestRelease" : "2.0",
+      "latestReleaseDate" : "2005-11-08T21:58:12.000+0000",
+      "versions" : [ {
+        "version" : "2.0",
+        "releaseDate" : "2005-11-08T21:58:12.000+0000",
+        "sha1" : "e6def06602b51b1d9be51f6c3fcdf163ecd01644",
+        "sha2" : "b20a1ec41d6f97ec5e50e5228682928b87e86dd038ce1b216f3e645e3be6e13e",
+        "bytecodeHash" : "ba12bc701cb152757d2bd313ff50d6def68fafc87d1a5d41efb403bb5d759359",
+        "platform" : "",
+        "licenses" : [ ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/1174?version=2.0"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/1174"
+      }
+    }, {
+      "name" : "PostgreSQL JDBC Driver - JDBC 4.0",
+      "description" : "Java JDBC 4.0 (JRE 6+) driver for PostgreSQL database",
+      "author" : null,
+      "authorUrl" : null,
+      "language" : "JAVA",
+      "coordinateType" : "MAVEN",
+      "coordinate1" : "org.postgresql",
+      "coordinate2" : "postgresql",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : "https://github.com/pgjdbc/pgjdbc-jre6",
+      "latestRelease" : "42.2.6",
+      "latestReleaseDate" : "2019-06-19T20:01:35.000+0000",
+      "versions" : [ {
+        "version" : "42.2.6",
+        "releaseDate" : "2019-06-19T20:01:35.000+0000",
+        "sha1" : "58586d617d57746853fc0b8f37c83a8384fcd0ca",
+        "sha2" : "07daadb33e87638703bf41f3307fc0dbdb386e54af5d5d6481511a36f50ca004",
+        "bytecodeHash" : "48ccaf94bde4496314cb1b688ac14ae771500c2c8b85d50c7101f5c5d8406d39",
+        "platform" : "",
+        "licenses" : [ {
+          "name" : "BSD2",
+          "license" : "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License (BSD-2-Clause)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/1656?version=42.2.6"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/1656"
+      }
+    }, {
+      "name" : "SQLite JDBC",
+      "description" : "SQLite JDBC library",
+      "author" : "Xerial Project",
+      "authorUrl" : null,
+      "language" : "JAVA",
+      "coordinateType" : "MAVEN",
+      "coordinate1" : "org.xerial",
+      "coordinate2" : "sqlite-jdbc",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : "https://github.com/xerial/sqlite-jdbc",
+      "latestRelease" : "3.28.0",
+      "latestReleaseDate" : "2019-06-25T02:04:28.000+0000",
+      "versions" : [ {
+        "version" : "3.28.0",
+        "releaseDate" : "2019-06-25T02:04:28.000+0000",
+        "sha1" : "406b4fa58eab5d29d779fa86cedb60c7ee071b57",
+        "sha2" : "93784e56dbf54625e06c992cf83f70e9c1bddd5c6ad1d3f01308c87b1d961b60",
+        "bytecodeHash" : "49da00340f9381af1f37d92aff52e9e3d29fcea1de4987da6196fdfae4ad9948",
+        "platform" : "",
+        "licenses" : [ {
+          "name" : "APACHE20",
+          "license" : "Apache License 2.0 (Apache-2.0)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/2793?version=3.28.0"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/2793"
+      }
+    }, {
+      "name" : "VeracodeAnnotations",
+      "description" : "Annotations used by Veracode's software analysis framework",
+      "author" : "Veracode",
+      "authorUrl" : "http://github.com/veracode/veracode-annotations",
+      "language" : "JAVA",
+      "coordinateType" : "MAVEN",
+      "coordinate1" : "com.veracode.annotation",
+      "coordinate2" : "VeracodeAnnotations",
+      "bugTrackerUrl" : null,
+      "codeRepoType" : null,
+      "codeRepoUrl" : "http://github.com/veracode/veracode-annotations/tree/master",
+      "latestRelease" : "1.2.1",
+      "latestReleaseDate" : "2018-04-23T18:41:36.000+0000",
+      "versions" : [ {
+        "version" : "1.2.1",
+        "releaseDate" : "2018-04-23T18:41:36.000+0000",
+        "sha1" : "c7b6bcfca2967d20caa5fd1f03fd0ce7aa42b809",
+        "sha2" : "15599df0f6c0a0601f04b9adf3d4148153408d61fa8425c0e96fa9aee556b27b",
+        "bytecodeHash" : "3dacd557951c295975ea72adcab64eef4738bcd8cf2df337f94d096b3ee90a4a",
+        "platform" : "",
+        "licenses" : [ {
+          "name" : "MIT",
+          "license" : "MIT license (MIT)",
+          "fromParentPom" : false
+        } ],
+        "_links" : {
+          "html" : "https://www.sourceclear.com/vulnerability-database/libraries/964291?version=1.2.1"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/libraries/964291"
+      }
+    } ],
+    "vulnerabilities" : [ {
+      "disclosureDate" : "2015-01-29T16:00:00.000+0000",
+      "cve" : "2015-0886",
+      "title" : "Information Disclosure Of Password Hashes Through Crypt_raw",
+      "overview" : "Integer overflow in the crypt_raw method in the key-stretching implementation in jBCrypt before 0.4 makes it easier for remote attackers to determine cleartext values of password hashes via a brute-force attack against hashes associated with the maximum exponent.",
+      "language" : "JAVA",
+      "vulnerabilityTypes" : [ "Information Disclosure" ],
+      "cvssScore" : 5.0,
+      "libraries" : [ {
+        "details" : [ {
+          "updateToVersion" : "0.4",
+          "versionRange" : "0.3m",
+          "fixText" : "",
+          "patch" : "https://github.com/jeremyh/jBCrypt/commit/e015c2c110ab7cf544400893f3543b45f359ff58"
+        } ],
+        "_links" : {
+          "ref" : "/records/0/libraries/7/versions/0"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/vulnerabilities/1527"
+      },
+      "hasExploits" : false
+    }, {
+      "disclosureDate" : "2019-03-12T00:00:00.000+0000",
+      "cve" : "2019-17571",
+      "title" : "Arbitrary Code Execution",
+      "overview" : "log4j-core is vulnerable to arbitrary code execution. Deserialization of untrusted data in `TcpSocketServer` and `UdpSocketServer` when listening for log data allows an attacker to execute arbitrary code via a malicious deserialization gadget.",
+      "language" : "JAVA",
+      "vulnerabilityTypes" : [ "Injection Vulnerabilities" ],
+      "cvssScore" : 7.5,
+      "libraries" : [ {
+        "details" : [ {
+          "updateToVersion" : "",
+          "versionRange" : "1.2.4-1.2.17",
+          "fixText" : "",
+          "patch" : ""
+        } ],
+        "_links" : {
+          "ref" : "/records/0/libraries/3/versions/0"
+        }
+      } ],
+      "_links" : {
+        "html" : "https://www.sourceclear.com/vulnerability-database/vulnerabilities/22224"
+      },
+      "hasExploits" : false
+    } ],
+    "unmatchedLibraries" : [ ],
+    "vulnMethods" : [ {
+      "calls" : [ {
+        "method" : {
+          "className" : "org/mindrot/jbcrypt/BCrypt",
+          "descriptor" : "([B[BI)",
+          "id" : null,
+          "methodName" : "crypt_raw",
+          "moduleName" : null
+        },
+        "callChains" : [ [ {
+          "callee" : {
+            "className" : "org/mindrot/jbcrypt/BCrypt",
+            "descriptor" : "(Ljava/lang/String;Ljava/lang/String;)",
+            "id" : null,
+            "methodName" : "hashpw",
+            "moduleName" : null
+          },
+          "caller" : {
+            "className" : "xyz/veracode/verainsecure/XSS",
+            "descriptor" : "(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)",
+            "id" : null,
+            "methodName" : "doPost",
+            "moduleName" : null
+          },
+          "fileName" : "xyz/veracode/verainsecure/XSS.class",
+          "internal" : false,
+          "lineNumber" : 57
+        }, {
+          "callee" : {
+            "className" : "org/mindrot/jbcrypt/BCrypt",
+            "descriptor" : "([B[BI)",
+            "id" : null,
+            "methodName" : "crypt_raw",
+            "moduleName" : null
+          },
+          "caller" : {
+            "className" : "org/mindrot/jbcrypt/BCrypt",
+            "descriptor" : "(Ljava/lang/String;Ljava/lang/String;)",
+            "id" : null,
+            "methodName" : "hashpw",
+            "moduleName" : null
+          },
+          "fileName" : "org/mindrot/jbcrypt/BCrypt.class",
+          "internal" : true,
+          "lineNumber" : 692
+        } ] ]
+      } ],
+      "links" : [ {
+        "ref" : "/records/0/libraries/7/versions/0"
+      } ]
+    } ],
+    "updateAdvisor" : {
+      "updateAdvices" : [ {
+        "buildBreakingState" : "YES",
+        "evidence" : {
+          "bytecodeHash" : null,
+          "commitHash" : null,
+          "coordinates" : {
+            "@id" : 1,
+            "buildType" : "MAVEN",
+            "coordinate1" : "org.mindrot",
+            "coordinate2" : "jbcrypt",
+            "coordinateType" : "MAVEN",
+            "platform" : null,
+            "scope" : "compile",
+            "version" : "0.3m"
+          },
+          "evidenceId" : "f2ff40e5-2999-46a1-ae33-cd335d1f5a33",
+          "evidencePaths" : [ {
+            "dependencyPath" : [ ],
+            "filePath" : "pom.xml",
+            "lineNumber" : null
+          } ],
+          "evidenceType" : "COORDINATES",
+          "sha1" : null,
+          "sha2" : null
+        },
+        "languageType" : "JAVA",
+        "libraryName" : "jBCrypt",
+        "updateToVersion" : "0.4"
+      } ]
+    }
+  } ]
+}

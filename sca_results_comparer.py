@@ -5,7 +5,7 @@
 
 import json
 
-existingScaVulns = []
+baselineScaVulns = []
 newScaVulns = []
 deltaScaVulns = []
 
@@ -13,7 +13,7 @@ with open('sca_results.json') as baselineScaResultsFile:
     data = json.load(baselineScaResultsFile)
     updateAdvices = data["records"][0]["updateAdvisor"]["updateAdvices"]
     for evidence in updateAdvices:
-        existingScaVulns.append([evidence["libraryName"], evidence["evidence"]["coordinates"]["version"], 
+        baselineScaVulns.append([evidence["libraryName"], evidence["evidence"]["coordinates"]["version"], 
         evidence["updateToVersion"]])
         
 with open('new_sca_results.json') as newScaResultsFile:
