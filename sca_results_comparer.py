@@ -1,3 +1,8 @@
+#Allows running a Veracode Code agent SCA scan to find differences between new branch and master (via results file)
+#Update guidance will be provided for each new libary a developer adds that creates an issue
+#example useage:
+#command line: srcclr scan --allow-dirty --update-advisor --json > new_sca_results.json && python3 sca_results_comparer.py
+
 import json
 
 existingScaVulns = []
