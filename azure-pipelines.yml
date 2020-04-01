@@ -25,6 +25,14 @@ steps:
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
 
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      curl -O https://downloads.veracode.com/securityscan/pipeline-scan-LATEST.zip
+      unzip pipeline-scan-LATEST.zip -d pipeline-scan-LATEST
+      java -jar "pipeline-scan-LATEST/pipeline-scan.jar" -vid $veracode_id -vkey $veracode_key --fail_on_severity "High" -f "target/verainsecure.wa
+
 - task: Veracode@2
   inputs:
     AnalysisService: 'vera_azure'
@@ -32,3 +40,4 @@ steps:
     version: '$(build.buildNumber)'
     filepath: '/home/vsts/work/1/s/target/verainsecure.war'
     sandboxName: 'AzureDevOps'
+
