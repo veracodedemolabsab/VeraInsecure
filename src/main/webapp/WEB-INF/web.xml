@@ -17,10 +17,10 @@
 		<servlet-class>xyz.veracode.verainsecure.XSS</servlet-class>
 	</servlet>
 	<servlet>
-		<servlet-name>Receipt</servlet-name>
-		<display-name>Receipt</display-name>
+		<servlet-name>PathTraversal</servlet-name>
+		<display-name>PathTraversal</display-name>
 		<description></description>
-		<servlet-class>xyz.veracode.verainsecure.Receipt</servlet-class>
+		<servlet-class>xyz.veracode.verainsecure.PathTraversal</servlet-class>
 	</servlet>
 	<servlet>
 		<servlet-name>ErrorMessageExposure</servlet-name>
@@ -49,8 +49,8 @@
 		<url-pattern>/xss</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
-		<servlet-name>Receipt</servlet-name>
-		<url-pattern>/deletereceipt</url-pattern>
+		<servlet-name>PathTraversal</servlet-name>
+		<url-pattern>/pathtraversal</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>ErrorMessageExposure</servlet-name>

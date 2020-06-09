@@ -13,14 +13,14 @@ import java.io.PrintWriter;
 
 
 //Shows File Path Injection
-public class Receipt extends HttpServlet {
+public class PathTraversal extends HttpServlet {
 	
 
 	private static final long serialVersionUID = 1L;
 
-	static Logger logger = LogManager.getLogger(Receipt.class.getName());
+	static Logger logger = LogManager.getLogger(PathTraversal.class.getName());
 
-    public Receipt() {
+    public PathTraversal() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -28,15 +28,16 @@ public class Receipt extends HttpServlet {
 	public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		
 		PrintWriter writer = res.getWriter();
-		String receiptFileName = req.getParameter("receiptname");
+		String path = System.getProperty("catalina.home") + "/receipts/";
 		
 		//CWE 73: Control of File Path
-		File receiptFile = new File("/user/profile/receipts/" + receiptFileName + ".txt");
+		File receiptFile = new File(path + req.getParameter("receiptname") + ".txt");
 		receiptFile.delete();
+		//writer.println(path + req.getParameter("receiptname") + ".txt");
 		
 		//Fix CWE 73 via Custom Cleanser
-		String customCleansedReceiptName = Utilities.cleanFilePath(receiptFileName);
-		File customCleansedReceiptFile = new File("/user/profile/receipts/" + customCleansedReceiptName + ".txt");
+		String customCleansedReceiptName = Utilities.cleanFilePath(req.getParameter("receiptname"));
+		File customCleansedReceiptFile = new File(path + customCleansedReceiptName + ".txt");
 		if(!customCleansedReceiptName.equals("reserved")){
 			customCleansedReceiptFile.delete();
 			writer.println("Valid File Name!");

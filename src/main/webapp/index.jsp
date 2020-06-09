@@ -12,7 +12,6 @@
 	<h2>CWE 117: CRLF Injection</h2>
 	<form action="crlfinjection" method="post">
 		Username: <input type="text" name="crlfusername" size="20"><br>
-		Password: <input type="text" name="crlfpassword" size="20"><br>
 		<input type="submit" value="Login" />
 	</form>
 	<h2>CWE 80: Cross-Site Scripting</h2>
@@ -22,8 +21,8 @@
 		<input type="submit" value="Login" />
 	</form>
 	<h2>CWE 73: File Name or Path Control</h2>
-	<form action="deletereceipt" method="post">
-		Receipt: <input type="text" name="receiptname" size="20"><br>
+	<form action="pathtraversal" method="post">
+		Receipt Name: <input type="text" name="receiptname" size="20"><br>
 		<input type="submit" value="Delete Receipt" />
 	</form>
 	<h2>CWE 209: Information Exposure Through An Error Message</h2>
