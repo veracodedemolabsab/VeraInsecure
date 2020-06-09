@@ -46,7 +46,7 @@ pipeline {
                 withCredentials([usernamePassword(credentialsId: 'veracode-credentials', passwordVariable: 'veracode_key', usernameVariable: 'veracode_id')]) {
                     sh label: '', script: '''curl -O https://downloads.veracode.com/securityscan/pipeline-scan-LATEST.zip'''
                     sh label: '', script: '''unzip pipeline-scan-LATEST.zip -d pipeline-scan-LATEST'''
-                    sh label: '', script: 'java -jar "pipeline-scan-LATEST/pipeline-scan.jar" -vid $veracode_id -vkey $veracode_key --fail_on_severity "High" -f "target/verainsecure.war"'
+                    sh label: '', script: 'java -jar "pipeline-scan-LATEST/pipeline-scan.jar" -vid $veracode_id -vkey $veracode_key -f "target/verainsecure.war"'
                 }
             }
         }
