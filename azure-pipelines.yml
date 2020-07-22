@@ -31,7 +31,7 @@ steps:
     script: |
       curl -O https://downloads.veracode.com/securityscan/pipeline-scan-LATEST.zip
       unzip pipeline-scan-LATEST.zip -d pipeline-scan-LATEST
-      java -jar "pipeline-scan-LATEST/pipeline-scan.jar" -vid $veracode_id -vkey $veracode_key --fail_on_severity "High" -f "target/verainsecure.war
+      java -jar "pipeline-scan-LATEST/pipeline-scan.jar" -vid $(veracode_id) -vkey $(veracode_key) --fail_on_severity "High" -f "target/verainsecure.war"
 
 - task: Veracode@2
   inputs:
