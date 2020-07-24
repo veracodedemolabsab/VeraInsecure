@@ -1,0 +1,26 @@
+#This is for a github repo using Gitlab as a CI system 
+#Each stage will clone the repo and the run relevant gitlab script
+image: maven:latest
+
+stages:
+  - veracode_security_checks
+
+veracode_agent_sca:
+  stage: veracode_security_checks
+  script: 
+    #Github
+    - git clone https://github.com/m-browntown/verainsecure.git
+    - cd vera-java-example
+    #Gitlab
+    - curl -sSL https://download.sourceclear.com/ci.sh | sh
+
+veracode_static_and_sca:
+  stage: veracode_security_checks
+  script: 
+    #Github
+    - git clone https://github.com/m-browntown/verainsecure.git
+    - cd vera-java-example
+    #Gitlab
+    - mvn clean package
+    - curl 'https://search.maven.org/remotecontent?filepath=com/veracode/vosp/api/wrappers/vosp-api-wrappers-java/19.6.5.8/vosp-api-wrappers-java-19.6.5.8.jar' > veracode.jar
+    - java -jar veracode.jar -vid $vid -vkey $vkey -sandbox_id 2408181 -action UploadAndScan -appname VeraInsecure -debug true -toplevel true -filepath './target/verainsecure.war' -createprofile false -version $CI_JOB_ID

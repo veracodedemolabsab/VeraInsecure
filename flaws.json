@@ -1,5 +1,17 @@
 
 {
     "IgnoredFlaws": [
+        {
+            "filename": "xyz/veracode/verainsecure/SQLInjection.java",
+            "comments": "comments",
+            "cweid": 404,
+            "flawhash": 1480817290,
+            "flawHashCount": 3,
+            "flawHashOrdinal": 2,
+            "causehash": 2866949028,
+            "causeHashOrdinal": 1,
+            "prototypehash": 3825569730,
+            "procedurehash": 3167886882
+        }
     ]
 }

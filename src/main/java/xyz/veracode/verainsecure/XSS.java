@@ -36,6 +36,7 @@ public class XSS extends HttpServlet {
 		PrintWriter writer = res.getWriter();
 		
 		//CWE 80: Script Tags
+		//Reflective XSS
 		
 		String username = req.getParameter("xssusername");
 		String htmlResponse = "<html>";
@@ -45,6 +46,7 @@ public class XSS extends HttpServlet {
 		
         	 
 		//Protect against CWE 80
+		//Built in Encoding Library
 
 		String sanitizedUsername = Encode.forJavaScript(req.getParameter("xssusername")); 
 		String cleanHTMLResponse = "<html>";
@@ -53,7 +55,9 @@ public class XSS extends HttpServlet {
 		writer.println(cleanHTMLResponse);
 		
 		//JBCrypt Flaw for SCA
+		//Vulnerable Method: hashpw, which inherits from actual vuln method
 		String password = req.getParameter("xsspassword");
+		@SuppressWarnings("unused")
 		String hashedPassword = BCrypt.hashpw(password, "123");
 
 	}
