@@ -8,7 +8,7 @@ stages:
 veracode_agent_sca:
   stage: veracode_security_checks
   script: 
-    - pwd
+    - git checkout master
     - curl -sSL https://download.sourceclear.com/ci.sh | sh
 
 veracode_static_and_sca:
