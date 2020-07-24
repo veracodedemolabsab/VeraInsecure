@@ -1,6 +1,6 @@
 #This is for a github repo using Gitlab as a CI system 
 #Each stage will clone the repo and the run relevant gitlab script
-image: maven:latest
+image: maven:3.3-jdk-8
 
 stages:
   - veracode_security_checks
@@ -8,8 +8,6 @@ stages:
 veracode_agent_sca:
   stage: veracode_security_checks
   script: 
-    - apt-get update
-    - apt-get install git
     - curl -sSL https://download.sourceclear.com/ci.sh | sh
 
 veracode_static_and_sca:
