@@ -8,8 +8,8 @@ stages:
 veracode_agent_sca:
   stage: veracode_security_checks
   script: 
-    - apt update
-    - apt install git
+    - apt-get update
+    - apt-get install git
     - curl -sSL https://download.sourceclear.com/ci.sh | sh
 
 veracode_static_and_sca:
