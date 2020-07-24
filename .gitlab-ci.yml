@@ -9,10 +9,17 @@ veracode_agent_sca:
   stage: veracode_security_checks
   script: 
     - curl -sSL https://download.sourceclear.com/ci.sh | sh
+    
+veracode_pipeline_scan:
+  stage: veracode_security_checks
+  script:
+    - mvn clean package
+    - curl -O https://downloads.veracode.com/securityscan/pipeline-scan-LATEST.zip
+    - unzip pipeline-scan-LATEST.zip -d pipeline-scan-LATEST
+    - java -jar pipeline-scan-LATEST/pipeline-scan.jar -vid $vid -vkey $vkey -f 'target/verainsecure.war' --fail_on_severity 'Very High'
 
 veracode_static_and_sca:
   stage: veracode_security_checks
   script: 
-    - mvn clean package
     - curl 'https://repo1.maven.org/maven2/com/veracode/vosp/api/wrappers/vosp-api-wrappers-java/20.7.7.0/vosp-api-wrappers-java-20.7.7.0.jar' > veracode.jar
     - java -jar veracode.jar -vid $vid -vkey $vkey -sandboxname GitLab -action UploadAndScan -appname VeraInsecure -debug true -toplevel true -filepath './target/verainsecure.war' -createprofile false -version $CI_JOB_ID
