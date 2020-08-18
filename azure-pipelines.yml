@@ -39,5 +39,5 @@ steps:
     veracodeAppProfile: 'VeraInsecure'
     version: '$(build.buildNumber)'
     filepath: '/home/vsts/work/1/s/target/verainsecure.war'
-    sandboxName: 'VeraInsecure Sandbox'
+
 
