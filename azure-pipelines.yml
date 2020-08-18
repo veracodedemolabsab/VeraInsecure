@@ -33,7 +33,7 @@ steps:
       unzip pipeline-scan-LATEST.zip -d pipeline-scan-LATEST
       java -jar "pipeline-scan-LATEST/pipeline-scan.jar" -vid $(veracode_id) -vkey $(veracode_key) --fail_on_severity "Very High" -f "target/verainsecure.war"
 
-- task: Veracode@2
+- task: Veracode@3
   inputs:
     AnalysisService: 'vera_azure'
     veracodeAppProfile: 'VeraInsecure'
